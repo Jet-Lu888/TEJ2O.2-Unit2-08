@@ -2,7 +2,7 @@
  *
  * Created by: Jet Lu
  * Created on: Mar 2026
- * This program will control an RGB LED.
+ * This program controls an RGB LED.
 */
 
 // setup
@@ -14,7 +14,7 @@ pins.digitalWritePin(DigitalPin.P14, 0) // green
 pins.digitalWritePin(DigitalPin.P15, 0) // red
 
 // program
-input.onButtonPressed(Button.A, function() {
+input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Yes)
     pause(500)
     basic.clearScreen()
@@ -22,26 +22,26 @@ input.onButtonPressed(Button.A, function() {
     // show red
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.showString("Red")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P15, 0)
 
     // show green
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.showString("Green")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P14, 0)
 
     // show blue
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.showString("Blue")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P13, 0)
 
     // show magenta
     pins.digitalWritePin(DigitalPin.P15, 1)
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.showString("Magenta")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P13, 0)
 
@@ -49,7 +49,7 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.showString("Cyan")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P13, 0)
 
@@ -57,7 +57,7 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P15, 1)
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.showString("Yellow")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P14, 0)
 
@@ -66,7 +66,7 @@ input.onButtonPressed(Button.A, function() {
     pins.digitalWritePin(DigitalPin.P14, 1)
     pins.digitalWritePin(DigitalPin.P13, 1)
     basic.showString("White")
-    pause(1)
+    pause(500)
     pins.digitalWritePin(DigitalPin.P15, 0)
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P13, 0)
