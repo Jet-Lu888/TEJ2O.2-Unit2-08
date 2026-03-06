@@ -71,7 +71,7 @@ input.onButtonPressed(Button.A, function () {
     pins.digitalWritePin(DigitalPin.P14, 0)
     pins.digitalWritePin(DigitalPin.P13, 0)
 
-    //reset
+    // reset
     basic.clearScreen()
     basic.showIcon(IconNames.Happy)
 })
