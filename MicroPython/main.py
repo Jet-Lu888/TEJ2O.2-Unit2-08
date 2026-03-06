@@ -20,21 +20,25 @@ while True:
         display.show(Image.YES)
         sleep(500)
         display.clear()
+
         # red
         pin15.write_digital(1)
         display.scroll("Red")
         sleep(1000)
         pin15.write_digital(0)
+
         # green
         pin14.write_digital(1)
         display.scroll("Green")
         sleep(1000)
         pin14.write_digital(0)
+
         # blue
         pin13.write_digital(1)
         display.scroll("Blue")
         sleep(1000)
         pin13.write_digital(0)
+
         # magenta
         pin13.write_digital(1)
         pin15.write_digital(1)
@@ -42,6 +46,7 @@ while True:
         sleep(1000)
         pin13.write_digital(0)
         pin15.write_digital(0)
+
         # cyan
         pin13.write_digital(1)
         pin14.write_digital(1)
@@ -49,6 +54,7 @@ while True:
         sleep(1000)
         pin13.write_digital(0)
         pin14.write_digital(0)
+
         # yellow
         pin15.write_digital(1)
         pin14.write_digital(1)
@@ -56,6 +62,7 @@ while True:
         sleep(1000)
         pin15.write_digital(0)
         pin14.write_digital(0)
+
         # white
         pin13.write_digital(1)
         pin14.write_digital(1)
@@ -65,6 +72,7 @@ while True:
         pin13.write_digital(0)
         pin14.write_digital(0)
         pin15.write_digital(0)
+
         # reset
         display.clear()
         display.show(Image.HAPPY)
